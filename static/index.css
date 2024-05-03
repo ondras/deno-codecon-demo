@@ -1,0 +1,38 @@
+h1 {
+	font-size: 150%;
+}
+
+body {
+	background-color: #ccc;
+	font-family: sans-serif;
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(var(--size), 1fr);
+	text-align: center;
+	font-size: calc(80dvmin / var(--size));
+	line-height: 1.2;
+	max-width: 100dvmin;
+}
+
+b {
+	overflow: hidden;
+}
+
+emoji-picker {
+	--emoji-font-family: inherit;
+}
+
+dialog {
+	padding: 0;
+}
+
+dialog::backdrop {
+	backdrop-filter: blur(10px);
+}
+
+footer {
+	margin-top: 3em;
+	font-size: 80%;
+}
